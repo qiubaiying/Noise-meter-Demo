@@ -99,6 +99,5 @@ iOS的`AVFoundation`框架中有一个`AVAudioRecorder`类专门处理录音操�
 
 ![](http://ww4.sinaimg.cn/large/7853084cgw1f9u1gqgqieg20k00zk7d8.gif)
 
-最后附上Demo下载地址：
 
 
