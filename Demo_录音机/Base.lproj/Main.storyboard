@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Mso-TH-YGd">
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDp-JZ-fEk">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6Y5-uh-Kdl"/>
+                                    <constraint firstAttribute="width" constant="31" id="w7n-gH-7dU"/>
+                                </constraints>
+                                <state key="normal" title="开始"/>
+                                <connections>
+                                    <action selector="recordClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="896-BT-9Qn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bx-O6-8Iw">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="31" id="AW2-Mw-qEs"/>
+                                    <constraint firstAttribute="height" constant="30" id="zEM-si-ihJ"/>
+                                </constraints>
+                                <state key="normal" title="停止"/>
+                                <connections>
+                                    <action selector="stopClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Pl-j5-lGy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="power" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BaY-l6-yod">
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BaY-l6-yod" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6vK-lQ-kaE"/>
+                            <constraint firstItem="hDp-JZ-fEk" firstAttribute="leading" secondItem="Mso-TH-YGd" secondAttribute="leading" id="7NY-aa-bn4"/>
+                            <constraint firstItem="Mso-TH-YGd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="127" id="Baa-hw-E3A"/>
+                            <constraint firstItem="Mso-TH-YGd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cvl-WF-aqU"/>
+                            <constraint firstItem="8Bx-O6-8Iw" firstAttribute="height" secondItem="hDp-JZ-fEk" secondAttribute="height" id="Ouh-ae-Hx5"/>
+                            <constraint firstItem="8Bx-O6-8Iw" firstAttribute="centerY" secondItem="hDp-JZ-fEk" secondAttribute="centerY" id="PcK-fa-3Zp"/>
+                            <constraint firstItem="BaY-l6-yod" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="TpN-Bv-cLX"/>
+                            <constraint firstItem="Mso-TH-YGd" firstAttribute="top" secondItem="BaY-l6-yod" secondAttribute="bottom" constant="33" id="YYd-P0-nbA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mso-TH-YGd" secondAttribute="trailing" constant="32" id="alH-Sc-S40"/>
+                            <constraint firstItem="hDp-JZ-fEk" firstAttribute="top" secondItem="Mso-TH-YGd" secondAttribute="bottom" constant="54" id="cVW-Iu-lFX"/>
+                            <constraint firstItem="8Bx-O6-8Iw" firstAttribute="width" secondItem="hDp-JZ-fEk" secondAttribute="width" id="ksI-Fn-Hkn"/>
+                            <constraint firstItem="8Bx-O6-8Iw" firstAttribute="trailing" secondItem="Mso-TH-YGd" secondAttribute="trailing" id="ryF-ph-ry9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BaY-l6-yod" secondAttribute="trailing" constant="32" id="sU6-bQ-Ccm"/>
+                            <constraint firstItem="Mso-TH-YGd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="vuE-hS-sE1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="audioPower" destination="Mso-TH-YGd" id="yml-yO-mnp"/>
+                        <outlet property="powerLabel" destination="BaY-l6-yod" id="Hl9-LG-X7D"/>
+                        <outlet property="record" destination="hDp-JZ-fEk" id="rwy-PE-IsS"/>
+                        <outlet property="stop" destination="8Bx-O6-8Iw" id="rvY-aB-S1Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
